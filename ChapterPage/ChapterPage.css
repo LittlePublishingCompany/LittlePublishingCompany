@@ -1,0 +1,92 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.section {
+	padding: 20px;
+}
+
+.storyBlock {
+	width: 500px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.storyText {
+	text-align: justify;
+}
+
+.screenButtons {
+	position: fixed;
+	top: 105px;
+	right: 5px;
+	z-index:3;
+}
+
+.btn-group{
+	position: fixed;
+	top: 110px;
+	right: 20px;
+}
+.fontSizeIncrease {
+	font-size: 24px;
+	height: 40px;
+	width: 40px;
+	padding-top: 0px;
+}
+.fontSizeDecrease {
+	font-size: 16px;
+	height: 40px;
+	width: 40px;
+}
+
+.nextChapter {
+	position: fixed;
+	top: 50%;
+	right: 30px;
+	font-size: 70px;
+	color: #000000;
+	opacity: 0.1;
+	z-index:1;
+}
+
+.prevChapter {
+	position: fixed;
+	top: 50%;
+	left: 30px;
+	font-size: 70px;
+	color: #000000;
+	opacity: 0.1;
+	z-index:1;
+}
+
+.rightSide {
+	position: fixed;
+	top: 100px;
+	right: 0;
+	height: 100%;
+	width: 100px;
+	background-color: #767676;
+	opacity: 0;
+	box-shadow: 0px 0px 40px 40px #767676;
+	z-index:2;
+}
+
+.leftSide {
+	position: fixed;
+	top: 100px;
+	left: 0;
+	height: 100%;
+	width: 100px;
+	background-color: #767676;
+	opacity: 0;
+	box-shadow: 0px 0px 40px 40px #767676;
+	z-index:2;
+}
+
+.show {
+	opacity: 0.2;
+}
+
+p { 
+	margin:0px 0px 0px 0px; 
+}

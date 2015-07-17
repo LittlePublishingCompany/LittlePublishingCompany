@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.descriptionText {
+	width: 850px;
+}
+
+.bio {
+	width:250px;
+	margin: 10px;
+	white-space: pre-wrap;
+	text-align: justify;
+	font-size: 16px;
+}

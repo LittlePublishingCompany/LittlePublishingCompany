@@ -1,0 +1,217 @@
+@charset "UTF-8";
+/* CSS Document */
+/* LESS Document */
+/* Screen Sizes */
+/* Colors */
+/* Shadows */
+/* Sizes */
+/* Items */
+/* Line Item */
+/* Block Item */
+/* Variables based on 250px block size and 10px section padding. 
+		Media queries do not allow varibles :( */
+/* Elements */
+/* Get rid of margins... Sigh... */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+}
+body {
+  padding-top: 50px;
+  min-height: 100%;
+  color: #8a8a8a;
+}
+body,
+html {
+  height: 100%;
+}
+a:link {
+  text-decoration: none;
+}
+/* Page Layout */
+.page {
+  position: relative;
+  min-height: 100%;
+}
+.section {
+  padding: 10px;
+  padding-bottom: 30px;
+}
+.footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  background-color: #f8f8f8;
+  border-top: 1px solid #e7e7e7;
+}
+/* Styling */
+.outline {
+  box-shadow: 0px 0px 8px 0px #8a8a8a;
+  border: 1px solid #8a8a8a;
+}
+.underline {
+  box-shadow: 0px 7px 10px -8px #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+}
+.heading {
+  box-shadow: 0px 7px 10px -8px #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+  font-size: 24px;
+}
+/* Highlights */
+.highlight {
+  box-shadow: 0px 0px 8px 0px #f25a3a;
+  border: 1px solid #f25a3a;
+}
+.highlight-bottom {
+  border-bottom: 1px solid #f25a3a;
+  box-shadow: 0px 7px 10px -8px #f25a3a;
+}
+.lineItemNeutral {
+  box-shadow: 0px 7px 10px -8px #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+  background-color: #f8f8f8;
+}
+.lineItemHighlight {
+  border-bottom: 1px solid #f25a3a;
+  box-shadow: 0px 7px 10px -8px #f25a3a;
+  color: #f25a3a;
+  background-color: #f8f8f8;
+}
+.blockItemNeutral {
+  box-shadow: 0px 0px 8px 0px #8a8a8a;
+  border: 1px solid #8a8a8a;
+  color: #f8f8f8;
+  text-shadow: 0 0 4px black;
+}
+.blockItemHighlight {
+  box-shadow: 0px 0px 8px 0px #f25a3a;
+  border: 1px solid #f25a3a;
+  color: #f8f8f8;
+  text-shadow: 0 0 4px #f25a3a;
+}
+/* Items */
+.lineItem {
+  height: 50px;
+  width: 100%;
+  position: relative;
+  line-height: 50px;
+  font-size: 16px;
+  overflow: hidden;
+}
+.lineItem * {
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.lineItem .pic {
+  background-size: cover;
+  background-position: center center;
+  width: 50px;
+  left: 0;
+  background-color: #49F27B;
+}
+.lineItem .left {
+  left: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media (min-width: 768px) {
+  .lineItem .left {
+    right: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .lineItem .left {
+    right: 0;
+  }
+}
+.lineItem .mid {
+  left: 50%;
+  right: 110px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: right;
+}
+.lineItem .right {
+  width: 110px;
+  right: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: right;
+}
+.blockItemContainer {
+  text-align: center;
+}
+.blockItemContainer .blockItemWrapper {
+  position: relative;
+  display: inline-table;
+  text-align: left;
+  /* Limit and  Center Wrapper */
+}
+@media (max-width: 992px) and (min-width: 830px) {
+  .blockItemContainer .blockItemWrapper {
+    max-width: 810px;
+  }
+}
+@media (max-width: 830px) and (min-width: 560px) {
+  .blockItemContainer .blockItemWrapper {
+    max-width: 540px;
+  }
+}
+@media (max-width: 560px) {
+  .blockItemContainer .blockItemWrapper {
+    max-width: 270px;
+  }
+}
+.blockItemContainer .blockItemWrapper a {
+  display: inline-table;
+  margin: 10px;
+}
+.blockItemContainer .blockItemWrapper a .blockItem {
+  position: relative;
+  padding: 5px;
+  height: 250px;
+  width: 250px;
+  background-size: cover;
+  background-position: center center;
+  background-color: #f8f8f8;
+}
+.blockItemContainer .blockItemWrapper a .blockItem * {
+  margin-bottom: 3px;
+}
+@media (min-width: 768px) {
+  .blockItemContainer .blockItemWrapper a .blockItem {
+    overflow: scroll;
+  }
+}
+@media (max-width: 768px) {
+  .blockItemContainer .blockItemWrapper a .blockItem {
+    overflow: hidden;
+  }
+}
+/* Custom */
+.textSection {
+  padding: 10px;
+  max-width: 590px;
+  text-align: justify;
+}
+@media (min-width: 768px) {
+  .textSection {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .textSection {
+    font-size: 20px;
+  }
+}
