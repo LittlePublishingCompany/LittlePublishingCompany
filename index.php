@@ -37,7 +37,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
 <link rel="manifest" href="favicons/manifest.json">
 <meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="Pictures/firelogotry2.png">
+<meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
 
 <!-- Google Analytics -->
@@ -62,7 +62,7 @@
     	<h1>Little Publishing Company</h1>
         <br>
         <a href="Home/Home.php">
-        <img src="Pictures/trans_logo.png" height="300">
+        <img src="Pictures/firelogotry2blankback.png" height="300">
         </a>
         <br><br>
         <h3>We're Americans, gathering ‘round the campfire</h3>
