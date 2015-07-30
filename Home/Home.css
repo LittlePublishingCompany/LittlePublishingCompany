@@ -4,3 +4,8 @@
 .carousel {
 	overflow: hidden;
 }
+
+.item img {
+    width: 100%;
+    height: 100%;
+}
