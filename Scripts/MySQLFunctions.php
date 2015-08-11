@@ -5,15 +5,21 @@
 	function MySQLConnect() {
 		$servername = "localhost";
 		$username = "root";
-		$password = "root";
+		$password = "aequitas"; // remote password
 		
 		// Create connection
 		$conn = new mysqli($servername, $username, $password);
+        
 		// Check connection
 		if ($conn->connect_error) {
-			die("Connection failed: " . $conn->connect_error);
-		} 
-		else {
+            $password = "root";  // local password
+            $conn = new mysqli($servername, $username, $password);
+            if ($conn->connect_error) {
+                die("Connection failed: ".$conn->connect_error);
+            } else {
+                return $conn;
+            }
+		} else {
 			return $conn;
 		}
 	}
